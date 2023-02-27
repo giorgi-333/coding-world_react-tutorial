@@ -14,3 +14,19 @@ button {
   cursor: pointer;
   font-size: 30px;
 }
+
+/* posts */
+
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1400px;
+  margin: 30px auto;
+  gap: 20px;
+}
+
+.post {
+  box-shadow: 2px 2px 8px #333;
+  border-radius: 6px;
+  padding: 10px;
+}
