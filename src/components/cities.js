@@ -6,8 +6,8 @@ function Cities() {
         <div> 
             <ul>
                 {
-                    citiesList.map(item => (
-                        <li>{item}</li>
+                    citiesList.map((item,i) => (
+                        <li key={i}>{item}</li>
                     ))
                 }
                 
