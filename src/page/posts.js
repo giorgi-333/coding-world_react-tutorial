@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import '../App.css' //დროებით
 
 function Posts() {
     const [posts,setPosts] = useState([])
