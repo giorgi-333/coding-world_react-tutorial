@@ -1,4 +1,17 @@
+/* header */
 
+header {
+  padding: 20px 50px;
+  box-shadow: 2px 2px 8px #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .links a {
+  padding: 0 10px;
+}
+
+/* counter */
 .counter-cont {
   background-color: #000;
   color: white;

@@ -1,12 +1,20 @@
 // import surati from './logo.svg';
 import './App.css';
-import Posts from './page/posts';
+import { Link, Outlet } from "react-router-dom";
 
 function App() {
 
   return (
-    <div className='Home'>
-      <Posts/>
+    <div>
+      <header>
+        <div className="logo">Coding world</div>
+        <div className='links'>
+          <Link to={''}> მთავარი </Link>
+          <Link to={'posts'}> პოსტები </Link>
+          <Link to={'about'}> ჩვენს შესახებ </Link>
+        </div>
+      </header>
+      <Outlet/>
     </div>
   );
 }

@@ -13,8 +13,8 @@ function Posts() {
     return (
         <div className="posts"> 
             {
-                posts.map((post)=>(
-                    <div className="post"> 
+                posts.map((post,i)=>(
+                    <div className="post" key={i}> 
                         <h1>{post.title}</h1>
                         <p>{post.body}</p>
                     </div>

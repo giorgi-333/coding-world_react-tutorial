@@ -4,6 +4,7 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Posts from './page/posts';
+import App from './App';
 
 import {
   createBrowserRouter,
@@ -13,16 +14,22 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
-  },
-  {
-    path: "/about",
-    element: <div>ჩვენს შესახებ</div>,
-  },
-  {
-    path: "/posts",
-    element: <Posts/>,
-  },
+    element: <App/>,
+    children: [
+      {
+        path: "",
+        element: <div>მთავარი გვერდი</div>,
+      },
+      {
+        path: "about",
+        element: <div>ჩვენს შესახებ</div>,
+      },
+      {
+        path: "posts",
+        element: <Posts/>,
+      },
+    ]
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
