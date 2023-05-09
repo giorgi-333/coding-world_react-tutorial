@@ -5,6 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Posts from './page/posts';
 import App from './App';
+import Post from './page/post';
 
 import {
   createBrowserRouter,
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
         path: "posts",
         element: <Posts/>,
       },
+      {
+        path: "post/:id",
+        element: <Post/>
+      }
     ]
   }
 ]);
